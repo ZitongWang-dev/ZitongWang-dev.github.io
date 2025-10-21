@@ -123,7 +123,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:zitongw71@gmail.com"
     - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar"
+      icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=UNx-6m4AAAAJ&hl=en"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
