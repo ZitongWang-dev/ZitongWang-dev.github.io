@@ -116,7 +116,7 @@ author:
   name             : "Zitong Wang"
   avatar           : "/assets/images/cat.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am interested in the brain!"
-  location         : "Somewhere"
+  location         : "Pittsburgh, US"
   email            :
   links:
     - label: "Email"
