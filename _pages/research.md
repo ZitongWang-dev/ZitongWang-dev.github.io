@@ -42,14 +42,14 @@ We investigated how macaque V1 and V2 represent visual boundaries across differe
 
 ---
 
-## GaN-based micro-LED and its applications
+## Characteristics of underwater lighting based on white LEDs
 **Affiliation:** Fudan University (Supervisor: Dr. Pengfei Tian)
 
-Designed experiments to simulate scattering particles in the ocean and measured underwater lighting effects using white LEDs. This work involved evaluating irradiation parameters based on distance and water particle concentration and calculating color rendering indices from measured spectra.
+This work systematically analyzed the characteristics of white LEDs for underwater lighting. We investigated how light properties, such as spectrum and color rendering, are affected by different water types and transmission distances. The findings provide a quantitative guide for the design and application of robust, high-quality LED-based lighting systems in underwater environments.
 
 **Related Publication:**
 
 * Qian, Z., Cui, X., **Wang, Z.**, et al. (2021). Characteristics of underwater lighting based on white LEDs. *Optik, 245*, 167638.
-    * **[[View Publication]]({{ [site.url](https://www.sciencedirect.com/science/article/abs/pii/S0030402621012432) }}/publications/)**
+    * **[[View Publication]](https://www.sciencedirect.com/science/article/abs/pii/S0030402621012432)**
 
 </div>
