@@ -15,8 +15,8 @@ We investigated how the representational geometry of attention in the superior c
 **Presentations on this work:**
 
 * **Wang, Z.**, & Herman, J. P. (2026). Strategic reshaping of the attentional axis in superior primate colliculus. *Abstract submitted to Computational and Systems Neuroscience (COSYNE) 2026*.
-      * <a href="{{ site.url }}/assets/files/COSYNE 2026 abstract.pdf" style="text-decoration: none;">
-        <strong>[View Abstract]</strong>
+    * <a href="{{ site.url }}/assets/files/COSYNE 2026 abstract.pdf" style="text-decoration: none;">
+        <strong>[[Read Abstract]]</strong>
         <br>
         <img src="{{ site.url }}/assets/images/COSYNE 2026 thumbnail.png" alt="COSYNE 2026 Abstract Thumbnail" style="max-width: 400px; margin-top: 5px;">
       </a>
