@@ -2,6 +2,7 @@
 title: "Research"
 permalink: /research/
 author_profile: true
+layout: single
 ---
 
 <div style="max-width: 800px; margin-left: auto; margin-right: auto;" markdown="1">
