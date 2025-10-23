@@ -23,7 +23,7 @@ We investigated how the representational geometry of attention in the superior c
 
 * **Wang, Z.**, & Herman, J. P. (2024). Beyond Behavioral Relevance: Primate Superior Colliculus Retains Visual Event Features in an Attention Task. *Poster presented at the Society for Neuroscience (SfN) Annual Meeting 2024*.
    * <a href="{{ site.url }}/assets/files/SfN 2024 poster.pdf" style="text-decoration: none;">
-        <strong>[[View Poster]]</strong>
+        <strong>[View Poster]</strong>
         <br>
       </a>
 
