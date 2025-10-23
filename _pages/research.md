@@ -36,8 +36,10 @@ We investigated how macaque V1 and V2 represent visual boundaries across differe
 * **Wang, Z.**, Zhang, X., Massot, C., et al. (2025). Cue-Invariant Geometric Structure of the Population Codes in Macaque V1 and V2. *Poster presented at Computational and Systems Neuroscience (COSYNE) 2025*.
     * **Winner: COSYNE 2025 Best Poster Award**
     * **[[View Poster]]({{ site.url }}/assets/files/COSYNE 2025 poster.pdf)**
-      <a href="{{ site.url }}/assets/files/COSYNE 2025 poster.pdf">
-        <img src="{{ site.url }}/assets/images/COSYNE 2025 thumbnail.png" alt="COSYNE 2025 Poster Thumbnail" style="max-width: 400px;">
+    * <a href="{{ site.url }}/assets/files/COSYNE 2025 poster.pdf" style="text-decoration: none;">
+        <strong>[[View Poster]]</strong>
+        <br>
+        <img src="{{ site.url }}/assets/images/COSYNE 2025 thumbnail.png" alt="COSYNE 2025 Poster Thumbnail" style="max-width: 400px; margin-top: 5px;">
       </a>
 
 ---
