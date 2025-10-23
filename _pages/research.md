@@ -3,7 +3,7 @@ title: "Research"
 permalink: /research/
 ---
 
-<div style="max-width: 800px; margin-left: auto; margin-right: auto;">
+<div style="max-width: 800px; margin-left: auto; margin-right: auto;" markdown="1">
 
 ## Population coding in primate superior colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
