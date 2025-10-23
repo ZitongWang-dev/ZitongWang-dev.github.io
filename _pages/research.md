@@ -1,20 +1,9 @@
 ---
 title: "Research"
 permalink: /research/
-classes:
-  - research-page
 ---
 
-<style>
-  .research-page .page__content {
-    /* Adjust this width as you like */
-    max-width: 400px;
-    
-    /* These two lines center the new, narrower content block */
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
+<div style="max-width: 800px; margin-left: auto; margin-right: auto;">
 
 ## Population coding in primate superior colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
@@ -60,3 +49,5 @@ Designed experiments to simulate scattering particles in the ocean and measured 
 
 * Qian, Z., Cui, X., **Wang, Z.**, et al. (2021). Characteristics of underwater lighting based on white LEDs. *Optik, 245*, 167638.
     * **[[View Publication]]({{ site.url }}/publications/)**
+
+</div>
