@@ -10,7 +10,7 @@ layout: single
 ## Strategic reshaping of the attentional axis in superior primate colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
 
-Investigated how the representational geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands. We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast). We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions. Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other.
+We investigated how the representational geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands. We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast). We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions. Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other.
 
 **Presentations on this work:**
 
@@ -29,7 +29,7 @@ Investigated how the representational geometry of attention in the superior coll
 ## Cue-invariant geometric structure of the population codes in macaque V1 and V2
 **Affiliation:** Carnegie Mellon University (Supervisor: Dr. Tai-Sing Lee)
 
-Examined cue-invariant geometric structures in V1 and V2 population codes for representing surface boundaries across different visual cues. Developed a cue-transfer decoding approach using Procrustes analysis to align population codes and quantify cue invariance. This work demonstrated that cue-invariant structures are preserved across various conditions and improve with larger neural populations.
+We investigated how macaque V1 and V2 represent visual boundaries across different cues (e.g., line drawings vs. natural images). We found that while single neurons have weak invariance, the *geometric structure* of the population code is highly stable. We developed a 'cue-transfer' decoding method using Procrustes analysis to show that these neural geometries can be aligned, revealing a robust, cue-invariant representation.
 
 **Presentations on this work:**
 
