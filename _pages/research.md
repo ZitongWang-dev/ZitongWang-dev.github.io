@@ -10,18 +10,19 @@ layout: single
 ## Strategic reshaping of the attentional axis in superior primate colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
 
-Investigated how the geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands[cite: 7]. [cite_start]We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast)[cite: 8]. [cite_start]We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions[cite: 10]. [cite_start]Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other[cite: 12, 13].
+Investigated how the representational geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands. We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast). We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions. Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other.
 
 **Presentations on this work:**
 
 * **Wang, Z.**, & Herman, J. P. (2026). Strategic reshaping of the attentional axis in superior primate colliculus. *Abstract submitted to Computational and Systems Neuroscience (COSYNE) 2026*.
     * **[[Read Abstract]]({{ site.url }}/assets/files/COSYNE 2026 abstract.pdf)**
+<a href="{{ site.url }}/assets/files/SfN 2024 poster.pdf">
+  <img src="{{ site.url }}/assets/images/COSYNE 2026 thumbnail.png" alt="COSYNE 2026 Poster Thumbnail" style="max-width: 400px;">
+</a>
+
 * **Wang, Z.**, & Herman, J. P. (2024). Beyond Behavioral Relevance: Primate Superior Colliculus Retains Visual Event Features in an Attention Task. *Poster presented at the Society for Neuroscience (SfN) Annual Meeting 2024*.
     * **[[Download Poster PDF]]({{ site.url }}/assets/files/SfN 2024 poster.pdf)**
 
-<a href="{{ site.url }}/assets/files/SfN 2024 poster.pdf">
-  <img src="{{ site.url }}/assets/images/SfN 2024 thumbnail.png" alt="SfN 2024 Poster Thumbnail" style="max-width: 400px;">
-</a>
 
 ---
 
