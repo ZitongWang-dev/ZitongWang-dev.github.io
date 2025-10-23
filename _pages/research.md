@@ -7,10 +7,10 @@ layout: single
 
 <div style="max-width: 800px; margin-left: auto; margin-right: auto;" markdown="1">
 
-## Population coding in primate superior colliculus
+## Strategic reshaping of the attentional axis in superior primate colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
 
-Developed an "encoding subspace" framework using partial least squares discriminant analysis (PLS-DA) to identify and compare how neural populations encode specific variables. Found that the superior colliculus exhibits distinct encoding patterns for target locations across different saccade tasks and for different stimulus change events (color vs. contrast) in an attention task.
+Investigated how the geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands[cite: 7]. [cite_start]We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast)[cite: 8]. [cite_start]We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions[cite: 10]. [cite_start]Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other[cite: 12, 13].
 
 **Presentations on this work:**
 
