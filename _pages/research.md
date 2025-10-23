@@ -8,7 +8,7 @@ classes:
 <style>
   .research-page .page__content {
     /* Adjust this width as you like */
-    max-width: 800px;
+    max-width: 400px;
     
     /* These two lines center the new, narrower content block */
     margin-left: auto;
