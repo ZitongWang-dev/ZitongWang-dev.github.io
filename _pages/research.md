@@ -26,7 +26,7 @@ Investigated how the representational geometry of attention in the superior coll
 
 ---
 
-## Population coding in primate early visual cortex
+## Cue-invariant geometric structure of the population codes in macaque V1 and V2
 **Affiliation:** Carnegie Mellon University (Supervisor: Dr. Tai-Sing Lee)
 
 Examined cue-invariant geometric structures in V1 and V2 population codes for representing surface boundaries across different visual cues. Developed a cue-transfer decoding approach using Procrustes analysis to align population codes and quantify cue invariance. This work demonstrated that cue-invariant structures are preserved across various conditions and improve with larger neural populations.
@@ -36,7 +36,6 @@ Examined cue-invariant geometric structures in V1 and V2 population codes for re
 * **Wang, Z.**, Zhang, X., Massot, C., et al. (2025). Cue-Invariant Geometric Structure of the Population Codes in Macaque V1 and V2. *Poster presented at Computational and Systems Neuroscience (COSYNE) 2025*.
     * **Winner: COSYNE 2025 Best Poster Award**
     * **[[Download Poster PDF]]({{ site.url }}/assets/files/COSYNE 2025 poster.pdf)**
-
 <a href="{{ site.url }}/assets/files/COSYNE 2025 poster.pdf">
   <img src="{{ site.url }}/assets/images/COSYNE 2025 thumbnail.png" alt="COSYNE 2025 Poster Thumbnail" style="max-width: 400px;">
 </a>
@@ -51,6 +50,6 @@ Designed experiments to simulate scattering particles in the ocean and measured 
 **Related Publication:**
 
 * Qian, Z., Cui, X., **Wang, Z.**, et al. (2021). Characteristics of underwater lighting based on white LEDs. *Optik, 245*, 167638.
-    * **[[View Publication]]({{ site.url }}/publications/)**
+    * **[[View Publication]]({{ [site.url](https://www.sciencedirect.com/science/article/abs/pii/S0030402621012432) }}/publications/)**
 
 </div>
