@@ -1,7 +1,20 @@
 ---
 title: "Research"
 permalink: /research/
+classes:
+  - research-page
 ---
+
+<style>
+  .research-page .page__content {
+    /* Adjust this width as you like */
+    max-width: 800px;
+    
+    /* These two lines center the new, narrower content block */
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
 
 ## Population coding in primate superior colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
@@ -16,7 +29,7 @@ Developed an "encoding subspace" framework using partial least squares discrimin
     * **[[Download Poster PDF]]({{ site.url }}/assets/files/SfN 2024 poster.pdf)**
 
 <a href="{{ site.url }}/assets/files/SfN 2024 poster.pdf">
-  <img src="{{ site.url }}/assets/images/SfN 2024 thumbnail.png" alt="SfN 2024 Poster Thumbnail">
+  <img src="{{ site.url }}/assets/images/SfN 2024 thumbnail.png" alt="SfN 2024 Poster Thumbnail" style="max-width: 400px;">
 </a>
 
 ---
@@ -33,7 +46,7 @@ Examined cue-invariant geometric structures in V1 and V2 population codes for re
     * **[[Download Poster PDF]]({{ site.url }}/assets/files/COSYNE 2025 poster.pdf)**
 
 <a href="{{ site.url }}/assets/files/COSYNE 2025 poster.pdf">
-  <img src="{{ site.url }}/assets/images/COSYNE 2025 thumbnail.png" alt="COSYNE 2025 Poster Thumbnail">
+  <img src="{{ site.url }}/assets/images/COSYNE 2025 thumbnail.png" alt="COSYNE 2025 Poster Thumbnail" style="max-width: 400px;">
 </a>
 
 ---
