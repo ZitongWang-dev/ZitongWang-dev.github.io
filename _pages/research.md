@@ -5,7 +5,7 @@ author_profile: true
 layout: single
 ---
 
-<div style="max-width: 1000px; margin-left: auto; margin-right: auto;" markdown="1">
+<div style="max-width: 1200px; margin-left: auto; margin-right: auto;" markdown="1">
 
 ## Strategic reshaping of the attentional axis in superior primate colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
