@@ -2,7 +2,7 @@
 title: "Research Projects"
 permalink: /research/
 author_profile: true
-layout: single
+layout: archive
 ---
 
 <div style="max-width: 800px; margin-left: auto; margin-right: auto;" markdown="1">
