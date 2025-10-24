@@ -3,7 +3,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 layout: single
-classes: wide
+classes: wide-page
 ---
 
 \* *denotes co-first authorship.*
