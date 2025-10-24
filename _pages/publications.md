@@ -5,8 +5,6 @@ author_profile: true
 layout: single
 ---
 
-<div style="max-width: 1200px; margin-left: auto; margin-right: auto;" markdown="1">
-
 \* *denotes co-first authorship.*
 
 ---
@@ -16,5 +14,3 @@ layout: single
 
 2.  Qian, Z., Cui, X., **Wang, Z.**, Zhou, G., Lin, R., Gu, E., & Tian, P. (2021). Characteristics of underwater lighting based on white LEDs. *Optik*, 245, 167638.
     * **[[View Publication]](https://www.sciencedirect.com/science/article/abs/pii/S0030402621012432)**
-
-</div>
