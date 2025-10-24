@@ -5,4 +5,8 @@ classes:
  - page-extrawide
 ---
 
-My research investigates how the brain represents information, focusing on the geometric structure of neural population codes. I explore how this geometry allows the early visual cortex (V1 and V2) to form stable, "cue-invariant" representations of visual concepts, regardless of how they are depicted (e.g., as line drawings or natural patches). My work also examines how the primate superior colliculus (SC) dynamically and "strategically reshapes" its neural geometry—an "attentional axis"—to flexibly adapt to changing and predictable task demands.
+I am a researcher with a background in electrical engineering and a current focus on computational neuroscience. I am working at the University of Pittsburgh under Dr. James P. Herman.
+
+My research involves applying computational methods to understand how neural populations in the primate brain represent information. I investigate the underlying geometric structure of these neural codes, aiming to understand how concepts are represented across different contexts and brain regions.
+
+Outside of research, I enjoy cooking a lot.
