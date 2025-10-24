@@ -5,9 +5,7 @@ author_profile: true
 layout: single
 ---
 
-<div style="max-width: 800px; margin-left: auto; margin-right: auto;" markdown="1">
-
-## Publications
+<div style="max-width: 1200px; margin-left: auto; margin-right: auto;" markdown="1">
 
 \* *denotes co-first authorship.*
 
