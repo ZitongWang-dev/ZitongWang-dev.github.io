@@ -10,6 +10,11 @@ search: false
 
 // --- Your Custom CSS ---
 
+// A "narrow" page (300px)
+.page-narrow .page__inner-wrap {
+  max-width: 300px !important;
+}
+
 // A "wide" page (1200px)
 .page-middle .page__inner-wrap {
   max-width: 900px !important;
