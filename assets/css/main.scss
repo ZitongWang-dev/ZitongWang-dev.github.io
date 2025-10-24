@@ -7,3 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// This targets the .wide-page class you defined in your front matter
+.wide-page .page__inner-wrap {
+  max-width: 1200px; /* Or whatever width you prefer */
+}
