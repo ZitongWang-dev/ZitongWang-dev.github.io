@@ -9,4 +9,4 @@ I am a researcher with a background in electrical engineering and a current focu
 
 My research involves applying computational methods to understand how neural populations in the primate brain represent information. I investigate the underlying geometric structure of these neural codes, aiming to understand how concepts are represented across different contexts and brain regions.
 
-Outside of research, I enjoy cooking a lot.
+Outside of research, I enjoy cooking a lot. You can see a gallery of my cooking [here](/cooking/).
