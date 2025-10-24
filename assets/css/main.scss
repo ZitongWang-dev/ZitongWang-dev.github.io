@@ -8,7 +8,19 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// This targets the .wide-page class you defined in your front matter
-.wide-page .page__inner-wrap {
+// --- Your Custom CSS ---
+
+// A "wide" page (1200px)
+.page-middle .page__inner-wrap {
+  max-width: 900px !important;
+}
+
+// A "wider" page (1400px)
+.page-wider .page__inner-wrap {
   max-width: 1400px !important;
+}
+
+// An "extra-wide" page (1600px)
+.page-extrawide .page__inner-wrap {
+  max-width: 1600px !important;
 }
