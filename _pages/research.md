@@ -3,6 +3,7 @@ title: "Research Projects"
 permalink: /research/
 author_profile: true
 layout: single
+classes: wide
 ---
 
 <div style="max-width: 1200px; margin-left: auto; margin-right: auto;" markdown="1">
