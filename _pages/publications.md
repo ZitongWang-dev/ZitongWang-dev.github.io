@@ -6,13 +6,6 @@ layout: single
 classes: wide-page
 ---
 
-<style>
-  .wide-page .page__inner-wrap {
-    max-width: 1400px; /* You can adjust this value */
-  }
-</style>
-
-
 \* *denotes co-first authorship.*
 
 ---
