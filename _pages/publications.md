@@ -3,7 +3,17 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 layout: single
+classes:
+  - wide-page
 ---
+
+<style>
+  .wide-page .page__inner-wrap {
+    max-width: 1400px; /* Adjust this value as you like */
+  }
+</style>
+
+## Publications
 
 \* *denotes co-first authorship.*
 
