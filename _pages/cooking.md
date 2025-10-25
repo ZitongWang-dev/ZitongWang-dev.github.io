@@ -90,8 +90,8 @@ gallery:
     title: "Xiaochao Pork 2"
   - url: /assets/images/food/xiaochao pork 3.jpg
     image_path: /assets/images/food/xiaochao pork 3.jpg
-    alt: "Xiaochao Pork 3"
-    title: "Xiaochao Pork 3"
+    alt: "Stir-fried Duck Breast"
+    title: "Stir-fried Duck Breast"
   - url: /assets/images/food/baiqie chicken.jpg
     image_path: /assets/images/food/baiqie chicken.jpg
     alt: "Baiqie Chicken"
