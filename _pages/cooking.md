@@ -4,10 +4,6 @@ permalink: /cooking/
 layout: single
 classes: wide
 gallery:
-  - url: /assets/images/food/baiqie chicken.jpg
-    image_path: /assets/images/food/baiqie chicken.jpg
-    alt: "Baiqie Chicken"
-    title: "Baiqie Chicken"
   - url: /assets/images/food/beef noodle.jpg
     image_path: /assets/images/food/beef noodle.jpg
     alt: "Beef Noodle"
@@ -96,6 +92,10 @@ gallery:
     image_path: /assets/images/food/xiaochao pork 3.jpg
     alt: "Xiaochao Pork 3"
     title: "Xiaochao Pork 3"
+  - url: /assets/images/food/baiqie chicken.jpg
+    image_path: /assets/images/food/baiqie chicken.jpg
+    alt: "Baiqie Chicken"
+    title: "Baiqie Chicken"
   - url: /assets/images/food/xiaochao pork.jpg
     image_path: /assets/images/food/xiaochao pork.jpg
     alt: "Xiaochao Pork"
