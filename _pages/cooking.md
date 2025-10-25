@@ -16,10 +16,10 @@ gallery:
     image_path: /assets/images/food/beef rib.jpg
     alt: "Beef Rib"
     title: "Beef Rib"
-  - url: /assets/images/food/beef stew.jpg
-    image_path: /assets/images/food/beef stew.jpg
-    alt: "Beef Stew"
-    title: "Beef Stew"
+  - url: /assets/images/food/beer-stewed duck.jpg
+    image_path: /assets/images/food/beer-stewed duck.jpg
+    alt: "Beer-stewed Duck"
+    title: "Beer-stewed Duck"
   - url: /assets/images/food/burger.jpg
     image_path: /assets/images/food/burger.jpg
     alt: "Burger"
