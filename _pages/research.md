@@ -8,7 +8,7 @@ classes: wide
 
 <div style="max-width: 1200px; margin-left: auto; margin-right: auto;" markdown="1">
 
-## Strategic reshaping of the attentional axis in superior primate colliculus
+## Strategic reshaping of the attentional axis in primate superior colliculus
 **Affiliation:** University of Pittsburgh (Supervisor: Dr. James P. Herman)
 
 We investigated how the representational geometry of attention in the superior colliculus (SC) adapts to the predictability of task demands. We recorded from SC populations while monkeys performed an attention task with predictable (blocked) or unpredictable (interleaved) change types (subtle color vs. supra-threshold contrast). We found that in predictable blocks, the SC's preparatory activity revealed change-type-specific states not seen in unpredictable sessions. Crucially, geometric analysis showed this was not a simple gain modulation but a fundamental geometric reconfiguration, where the "attentional axis" for one change type was sometimes orthogonal or inverted relative to the other.
