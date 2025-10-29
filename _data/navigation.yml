@@ -7,7 +7,9 @@ main:
   - title: "Publications"
     url: /publications/
   - title: "CV"
-    url: /assets/files/CV-Zitong Wang 10242025.pdf  
+    url: /assets/files/CV-Zitong Wang 10242025.pdf
+  - title: "CV2"
+    url: /assets/files/Cue_Invariance_V1_V2_bioRxiv (10).pdf
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
