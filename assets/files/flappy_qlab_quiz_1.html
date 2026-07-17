@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flappy Q-Lab · Warm-up Quiz</title>
+<style>
+  :root{
+    --bg:#131a2e; --panel:#1c2743; --panel2:#233052; --line:#31406b;
+    --ink:#eaf0ff; --muted:#8ea0c9; --amber:#ffcf4a; --amber-d:#e0a92e;
+    --green:#5fd39a; --green-bg:#193a30; --coral:#ff8a7a; --coral-bg:#3a1f22;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.5;
+    padding:18px 14px 48px; max-width:560px; margin:0 auto;
+  }
+  h1{font-size:22px; margin:0 0 2px; font-weight:800; letter-spacing:-.02em}
+  h1 .b{color:var(--amber)}
+  .sub{color:var(--muted); font-size:13px; margin:0 0 18px}
+
+  .bar{height:8px; background:var(--panel2); border-radius:8px; overflow:hidden; margin-bottom:8px}
+  .bar > i{display:block; height:100%; width:0; background:var(--amber); border-radius:8px; transition:width .35s ease}
+  .count{color:var(--muted); font-size:12px; font-weight:600; margin-bottom:16px}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px 16px}
+  .q{font-size:17px; font-weight:700; margin:0 0 16px}
+
+  .opt{display:block; width:100%; text-align:left; font-family:inherit; font-size:15px; font-weight:600;
+    color:var(--ink); background:var(--panel2); border:1.5px solid var(--line); border-radius:12px;
+    padding:14px 14px; margin-bottom:10px; cursor:pointer; transition:border-color .15s, background .15s;
+    display:flex; gap:11px; align-items:flex-start}
+  .opt:hover:not(:disabled){border-color:var(--amber)}
+  .opt:disabled{cursor:default}
+  .opt .key{flex:0 0 22px; height:22px; border-radius:6px; background:var(--line); color:var(--ink);
+    font-size:13px; font-weight:800; display:flex; align-items:center; justify-content:center; margin-top:1px}
+  .opt.correct{background:var(--green-bg); border-color:var(--green)}
+  .opt.correct .key{background:var(--green); color:#0c1a14}
+  .opt.wrong{background:var(--coral-bg); border-color:var(--coral)}
+  .opt.wrong .key{background:var(--coral); color:#2a1113}
+  .opt.dim{opacity:.5}
+
+  .fb{margin-top:6px; border-radius:12px; padding:13px 14px; font-size:14px; display:none}
+  .fb.show{display:block}
+  .fb.ok{background:var(--green-bg); border:1px solid var(--green)}
+  .fb.no{background:var(--coral-bg); border:1px solid var(--coral)}
+  .fb .tag{font-weight:800; font-size:13px; letter-spacing:.02em; display:block; margin-bottom:3px}
+  .fb.ok .tag{color:var(--green)} .fb.no .tag{color:var(--coral)}
+
+  .next{margin-top:16px; width:100%; font-family:inherit; font-weight:800; font-size:16px; color:#141a2e;
+    background:var(--amber); border:none; border-radius:12px; padding:15px; cursor:pointer; display:none}
+  .next.show{display:block} .next:active{background:var(--amber-d)}
+
+  /* results */
+  .result{text-align:center; padding:26px 18px}
+  .score{font-size:52px; font-weight:800; color:var(--amber); font-variant-numeric:tabular-nums; line-height:1}
+  .score small{font-size:22px; color:var(--muted); font-weight:700}
+  .rmsg{font-size:16px; font-weight:600; margin:14px 0 6px}
+  .rhint{color:var(--muted); font-size:14px; margin-bottom:20px}
+  .restart{font-family:inherit; font-weight:700; font-size:15px; color:var(--ink); background:var(--panel2);
+    border:1px solid var(--line); border-radius:12px; padding:13px 22px; cursor:pointer}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+  <h1>Flappy <span class="b">Q-Lab</span> · Warm-up</h1>
+  <p class="sub">15 quick questions to warm up before our next meeting. Tap an answer to see why it's right — no pressure, this is just for fun.</p>
+
+  <div class="bar"><i id="fill"></i></div>
+  <div class="count" id="count">Question 1 of 15</div>
+
+  <div id="stage"></div>
+
+<script>
+"use strict";
+const QUESTIONS=[
+  { q:"Reinforcement learning is best described as…",
+    opts:["Memorizing a table of correct answers someone gives you","An agent learning which actions work best by interacting with a world and getting rewards","Sorting data into labeled groups","Following a fixed set of if-then rules written by a programmer"],
+    correct:1,
+    why:"RL learns from experience and reward through trial and error — not from an answer key or hand-written rules. That's what sets it apart from other kinds of learning." },
+
+  { q:"At the heart of RL is a repeating loop. Which describes it correctly?",
+    opts:["The agent sees a state, takes an action, then gets a reward and a new state — again and again","The environment chooses the actions while the agent just watches","The agent collects all of its rewards at the very start","Nothing repeats — the agent acts only once"],
+    correct:0,
+    why:"RL is a cycle: state → action → reward + next state → repeat. Learning builds up across many turns of that loop." },
+
+  { q:"What is an RL agent ultimately trying to do?",
+    opts:["Take as many actions as it can","Finish as fast as possible","Collect the most total reward over time","Copy whatever the environment does"],
+    correct:2,
+    why:"The goal is always to maximize cumulative reward. Nearly any goal can be framed this way — it's known as the reward hypothesis." },
+
+  { q:"You always eat at your favorite restaurant, so you never find a better one nearby. In RL terms, you are…",
+    opts:["Exploring too much","Exploiting — and missing out by never exploring","Maximizing the discount factor","Updating a Q-table"],
+    correct:1,
+    why:"Always using what you already know is exploitation. A little exploration — trying something new — is how you discover something better. Balancing the two is a core RL challenge." },
+
+  { q:"An agent's \"policy\" is…",
+    opts:["Its current score","Its strategy — the rule that picks an action for each situation","The list of rules built into the game","The reward it receives"],
+    correct:1,
+    why:"A policy is the agent's behavior: given a state, which action to take. In our project, the bird's policy is \"given where I am, do I flap?\"" },
+
+  { q:"In our project, how does the bird figure out how to play?",
+    opts:["We program the exact rule for when to flap","It learns by trying, crashing, and adjusting based on rewards","It copies a recording of a human player","It reads the pipe positions from a hidden file"],
+    correct:1,
+    why:"That's reinforcement learning: nobody tells the agent the right move — it discovers what works by trial and error, guided by reward." },
+
+  { q:"The \"state\" is the information the bird uses to decide. Which is the most useful state here?",
+    opts:["The total score so far","How many rounds it has trained","Where it is relative to the next gap, and how fast it's falling","The color of the pipes"],
+    correct:2,
+    why:"The state is the situation that actually matters for the decision — distance to the gap plus how fast the bird is moving. Score and colors don't help it choose when to flap." },
+
+  { q:"How many actions can the bird choose from at each moment?",
+    opts:["One","Two — flap or don't flap","Four — up, down, left, right","Unlimited"],
+    correct:1,
+    why:"Just two: flap or not. A small action space is part of why the Q-table stays small enough to fill in." },
+
+  { q:"What is the reward's job?",
+    opts:["To tell the bird which pixels to look at","To make the game run faster","To signal what's good or bad, so the bird knows what to aim for","To store the bird's memory"],
+    correct:2,
+    why:"Reward is the feedback signal — plus for surviving or passing a pipe, minus for crashing. Getting the most total reward is the whole goal." },
+
+  { q:"What does the Q-table actually store?",
+    opts:["A picture of every screen the bird has seen","For each situation, how good each action is","The high scores of human players","The rules of the game"],
+    correct:1,
+    why:"\"Q\" stands for Quality. The Q-table is the bird's cheat-sheet: for each state, a value for flapping and a value for not flapping. It picks the higher one." },
+
+  { q:"After the bird takes an action, how does it update its cheat-sheet?",
+    opts:["It erases the old value and starts fresh","It nudges its old guess toward (the reward it got + the best it expects next)","It waits until the game ends, then guesses randomly","It never changes once a value is set"],
+    correct:1,
+    why:"Each step it nudges the old guess a little toward reward-plus-best-next-guess. The gap between the old guess and the new evidence is the \"surprise\" that drives learning." },
+
+  { q:"The bird is learning, but very slowly. Which knob most directly controls how big each learning step is?",
+    opts:["Learning rate (α)","Discount (γ)","Exploration (ε)","Gap size"],
+    correct:0,
+    why:"α is the size of each nudge. A bigger α learns faster (but jumpier); too small and it crawls. This is the first knob to reach for when learning is slow." },
+
+  { q:"The discount factor (γ) controls…",
+    opts:["How fast the pipes move","How much the bird cares about future reward vs. reward right now","How many actions it has","The screen brightness"],
+    correct:1,
+    why:"γ sets the horizon. High γ means it plans for the future; low γ means it only chases the next instant's reward." },
+
+  { q:"Exploration (ε) makes the bird sometimes flap randomly instead of using its best guess. Why would that ever help?",
+    opts:["It never helps — random moves are always bad","It lets the bird discover situations and moves it hasn't tried yet","It makes the game run faster","It adds to the reward directly"],
+    correct:1,
+    why:"That's the explore-vs-exploit trade-off: trying new things can reveal a better strategy you'd never find by always repeating what already seems best. (The catch: too much random flapping also causes crashes.)" },
+
+  { q:"The Bellman idea gives a shortcut for judging how good a moment is. Instead of adding up every future reward, it uses…",
+    opts:["A random guess","The reward right now, plus the (discounted) value of whatever comes next","The total number of pipes passed so far","The learning rate times epsilon"],
+    correct:1,
+    why:"The Bellman equation defines value recursively: value now = reward now + the discounted value of the next state. Each guess leans on the next one — which is exactly what lets the bird update its cheat-sheet step by step." },
+];
+
+const KEYS=["A","B","C","D"];
+let idx=0, score=0, answered=false;
+const stage=document.getElementById("stage");
+const fill=document.getElementById("fill");
+const count=document.getElementById("count");
+
+function render(){
+  answered=false;
+  const item=QUESTIONS[idx];
+  fill.style.width=((idx)/QUESTIONS.length*100)+"%";
+  count.textContent="Question "+(idx+1)+" of "+QUESTIONS.length;
+
+  const card=document.createElement("div"); card.className="card";
+  const q=document.createElement("p"); q.className="q"; q.textContent=item.q; card.appendChild(q);
+
+  item.opts.forEach((text,i)=>{
+    const b=document.createElement("button"); b.className="opt";
+    b.innerHTML='<span class="key">'+KEYS[i]+'</span><span>'+text+'</span>';
+    b.onclick=()=>choose(i,card,item);
+    card.appendChild(b);
+  });
+
+  const fb=document.createElement("div"); fb.className="fb"; fb.id="fb"; card.appendChild(fb);
+  const next=document.createElement("button"); next.className="next"; next.id="next";
+  next.textContent=(idx===QUESTIONS.length-1)?"See my score":"Next question";
+  next.onclick=advance; card.appendChild(next);
+
+  stage.innerHTML=""; stage.appendChild(card);
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function choose(i,card,item){
+  if(answered) return; answered=true;
+  const opts=card.querySelectorAll(".opt");
+  const isRight=(i===item.correct);
+  if(isRight) score++;
+  opts.forEach((o,j)=>{
+    o.disabled=true;
+    if(j===item.correct) o.classList.add("correct");
+    else if(j===i) o.classList.add("wrong");
+    else o.classList.add("dim");
+  });
+  const fb=document.getElementById("fb");
+  fb.className="fb show "+(isRight?"ok":"no");
+  fb.innerHTML='<span class="tag">'+(isRight?"Correct":"Not quite")+'</span>'+item.why;
+  document.getElementById("next").classList.add("show");
+}
+
+function advance(){
+  if(idx<QUESTIONS.length-1){ idx++; render(); }
+  else results();
+}
+
+function results(){
+  fill.style.width="100%";
+  count.textContent="Done!";
+  let msg,hint;
+  if(score>=13){msg="Brilliant — you've really got this.";hint="You're more than ready for the next step.";}
+  else if(score>=10){msg="Great work — a solid grasp.";hint="Just a couple worth a quick look before we meet.";}
+  else if(score>=7){msg="Good start!";hint="We'll review a few of these together — that's exactly what the meeting is for.";}
+  else{msg="Nice effort getting through it.";hint="No worries at all — this is fresh material, and we'll walk through it together next time.";}
+  stage.innerHTML=
+    '<div class="card result">'+
+      '<div class="score">'+score+'<small> / '+QUESTIONS.length+'</small></div>'+
+      '<div class="rmsg">'+msg+'</div>'+
+      '<div class="rhint">'+hint+'</div>'+
+      '<button class="restart" onclick="restart()">Try again</button>'+
+    '</div>';
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function restart(){ idx=0; score=0; render(); }
+render();
+</script>
+</body>
+</html>
